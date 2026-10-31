@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vpc-visual: AWS 3-tier architecture, explained as a housing society</title>
+<meta name="description" content="An animated, beginner-friendly diagram of an AWS 3-tier architecture told as a gated housing society.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side" aria-label="Steps">
+    <header class="brand">
+      <h1>vpc-visual</h1>
+      <p>Ravi's gated society, a 3-tier AWS network in 9 steps</p>
+    </header>
+    <nav id="steps" class="steps"></nav>
+    <div class="controls">
+      <button id="play" class="ctl" type="button">Auto-play</button>
+      <button id="reset" class="ctl" type="button">Reset</button>
+    </div>
+    <section class="legend" aria-label="Legend">
+      <h2>Moving objects</h2>
+      <ul id="legend"></ul>
+    </section>
+  </aside>
+  <main class="main">
+    <div class="stage-wrap">
+      <svg id="stage" viewBox="0 0 1100 620" role="img" aria-label="Animated diagram of an AWS 3-tier architecture"></svg>
+    </div>
+    <section class="caption" aria-live="polite">
+      <h2 id="cTitle"></h2>
+      <div class="cap-grid">
+        <div><h3>In plain words</h3><p id="cPlain"></p></div>
+        <div><h3>Technical name</h3><p id="cTech"></p></div>
+        <div><h3>Watch the picture</h3><p id="cWatch"></p></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
